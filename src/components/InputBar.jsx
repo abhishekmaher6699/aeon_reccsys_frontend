@@ -8,6 +8,7 @@ function InputBar({ setData }) {
     const [error, setError] = useState(null);
     const [show, setShow] = useState(true);
 
+    
     const handleTypeChange = (newType) => {
         if (newType === type) {
             setShow(!show);
@@ -28,7 +29,7 @@ function InputBar({ setData }) {
                 if (input.trim().startsWith('https://aeon.co/essays/')) {
 
                     const { data } = await axios.get(
-                        `http://35.173.126.231/reccomend_with_url/?url=${input}`,
+                        `https://35.173.126.231/reccomend_with_url/?url=${input}`,
                         {
                             headers: {
                                 'Content-Type': 'application/json',
@@ -44,7 +45,7 @@ function InputBar({ setData }) {
 
             } else {
                 const { data } = await axios.get(
-                    `http://35.173.126.231/reccomend_with_prompt?prompt=${input}`,
+                    `https://35.173.126.231/reccomend_with_prompt?prompt=${input}`,
                     {
                         headers: {
                             'Content-Type': 'application/json',
