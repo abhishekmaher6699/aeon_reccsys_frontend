@@ -45,7 +45,7 @@ function InputBar({ setData }) {
 
             } else {
                 const { data } = await axios.get(
-                    `https://35.173.126.231/reccomend_with_prompt?prompt=${input}`,
+                    `https://35.173.126.231/reccomend_with_prompt/?prompt=${input}`,
                     {
                         headers: {
                             'Content-Type': 'application/json',
