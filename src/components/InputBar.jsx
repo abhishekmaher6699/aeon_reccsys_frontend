@@ -29,7 +29,7 @@ function InputBar({ setData }) {
                 if (input.trim().startsWith('https://aeon.co/essays/')) {
 
                     const { data } = await axios.get(
-                        `http://35.173.126.231:8000/reccomend_with_url?url=${input}`,
+                        `http://18.208.178.22:8000/reccomend_with_url?url=${input}`,
                         {
                             headers: {
                                 'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ function InputBar({ setData }) {
 
             } else {
                 const { data } = await axios.get(
-                    `http://35.173.126.231:8000/reccomend_with_prompt?prompt=${input}`,
+                    `http://18.208.178.22:8000/reccomend_with_prompt?prompt=${input}`,
                     {
                         headers: {
                             'Content-Type': 'application/json',
