@@ -16,14 +16,14 @@ jobs:
     - name: Test API Endpoints
       run: |
           # Test GET endpoint
-          response=$(curl -s -o /dev/null -w "%{http_code}" http://35.173.126.231:8000/reccomend_with_url/?url=https://aeon.co/essays/how-to-live-on-the-edge-of-a-disappearing-coastline)
+          response=$(curl -s -o /dev/null -w "%{http_code}" http://18.208.178.22:8000/reccomend_with_url/?url=https://aeon.co/essays/how-to-live-on-the-edge-of-a-disappearing-coastline)
           if [ "$response" -ne 200 ]; then
             echo "GET endpoint1 failed with status $response"
             exit 1
           fi
           echo "GET endpoint1 passed with status $response"
 
-          response=$(curl -s -o /dev/null -w "%{http_code}" http://35.173.126.231:8000/reccomend_with_prompt/?prompt=india)
+          response=$(curl -s -o /dev/null -w "%{http_code}" http://18.208.178.22:8000/reccomend_with_prompt/?prompt=india)
           if [ "$response" -ne 200 ]; then
             echo "GET endpoint1 failed with status $response"
             exit 1
