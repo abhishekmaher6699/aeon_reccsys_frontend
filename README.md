@@ -94,5 +94,5 @@ Follow these steps to set up and run the application locally for development:
    ```  
 
 7. **Testing the Chrome Extension (Optional)**:  
-   - Follow the [extension setup instructions](http://your-site-link.com/extension-guide) to download and load the Chrome extension for local testing.  
+   - Follow the [extension setup instructions](http://3.94.162.4/download) to download and load the Chrome extension for local testing.  
 
